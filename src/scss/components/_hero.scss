@@ -23,12 +23,34 @@
         }
         p{
             @include variaveis.fonteParagrafo;
-            font-size: variaveis.$tamanhoTextoSm;
+            font-size: variaveis.$tamanhoTextoMd;
             margin-bottom: 20px;
         }
         &__btn{
             @include variaveis.botoesTamanho;
             box-shadow: 0 5px 10px black;
+        }
+    }
+}
+.regras-e-detalhes{
+    .container{
+        &__lista{
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            flex-wrap: wrap;
+            li{
+                font-size: variaveis.$tamanhoTextoSm;
+                @include variaveis.fonteParagrafo;
+                align-items: center;
+                text-decoration:underline;
+                color: gray;
+                    &:before{
+                        content:"*";
+                        color:red;
+                    }
+            }
         }
     }
 }

@@ -1,0 +1,11 @@
+@use "./variaveis";
+.shows-confirmados{
+    padding-top: 120px;
+    .container{
+        h2{
+            color:#fff;
+            @include variaveis.fontePrincipalTitulo;
+            font-size: variaveis.$tamanhoTextoTituloLg;
+        }
+    }
+}

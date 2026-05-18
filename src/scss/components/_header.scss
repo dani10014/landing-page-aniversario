@@ -5,6 +5,10 @@
     button{
         padding: 10px;
         border-radius: 15px;
-        
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: scale(0.9);
+            box-shadow: 0px 0px 10px black;
+    }
     }
 }
