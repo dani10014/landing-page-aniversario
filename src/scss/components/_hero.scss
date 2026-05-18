@@ -1,5 +1,11 @@
 @use "./variaveis";
-
+.section-hero-mae{
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+}
 .container-foto-hero{
     height: 40vh;
     img{
