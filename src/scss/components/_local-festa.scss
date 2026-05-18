@@ -1,0 +1,43 @@
+@use "./variaveis";
+
+.local-festa{
+    .container{
+        .imagem-local{
+            width: 100%;
+            border-radius: 10px;
+            @media (min-width:768px){
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+        .texto-local{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            h2{
+                width: 50%;
+                color: #fff;
+                @include variaveis.fontePrincipalTitulo;
+                font-size: variaveis.$tamanhoTextoTituloLg;
+            }
+        }
+        .data-e-hora{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .lista-hora{
+                list-style: none;
+                padding: 0;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include variaveis.fonteParagrafo;
+                font-size: variaveis.$tamanhoTextoSm;
+                li{
+                    border-right: 2px solid #fff;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

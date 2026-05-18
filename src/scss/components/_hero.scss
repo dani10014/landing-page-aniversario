@@ -4,7 +4,9 @@
     display: block;
     align-items: center;
     justify-content: center;
-    
+    @media (min-width:768px){
+        margin-bottom: 200px;
+    }
 }
 .container-foto-hero{
     height: 40vh;
@@ -13,6 +15,9 @@
         width: 100%;
         object-fit: cover;
         filter: brightness(0.5);
+    }
+    @media (min-width:768px){
+        height:60vh;
     }
 }
 .secao-nome-e-data{

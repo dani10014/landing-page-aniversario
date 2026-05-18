@@ -1,6 +1,9 @@
 @use "./variaveis";
 .shows-confirmados{
     .container{
+        @media (min-width:768px){
+                margin-bottom: 200px;
+            }
         h2{
             color:#fff;
             @include variaveis.fontePrincipalTitulo;
@@ -16,11 +19,17 @@
             bottom: -330px;
             top: 240px;
             height: 100px;
+            @media (min-width:768px){
+                top: 350px;
+            }
         }
         .carousel-control-next{
             bottom: -330px;
             top: 240px;
             height: 100px;
+            @media (min-width:768px){
+                top: 350px;
+            }
         }
             .carousel-inner{
                 margin-bottom: 50px; // Mantém a margem inferior desejada
@@ -30,7 +39,11 @@
                     img{
                         border-radius: 10px;
                         height: 250px;
-                        object-fit: cover;
+                        object-fit:fill;
+                        @media (min-width:768px){
+                            height: 350px;
+                            object-fit:fill;
+                        }
                     }
                 }
             }
