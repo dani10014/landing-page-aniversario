@@ -1,6 +1,9 @@
 @use "./variaveis";
 .shows-confirmados{
-    padding-top: 150px;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
     .container{
         h2{
             color:#fff;
