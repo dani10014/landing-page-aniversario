@@ -88,12 +88,6 @@
   color: red;
 }
 
-.shows-confirmados {
-  height: 100vh;
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
 .shows-confirmados .container h2 {
   color: #fff;
   font-family: "Montserrat", sans-serif;
