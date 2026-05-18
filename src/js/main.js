@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ;
     }
 
-    // 5. Executa a função imediatamente (para não começar zerado) e atualiza a cada 1 segundo
     atualizarCronometro();
     const intervalo = setInterval(atualizarCronometro, 1000);
 });

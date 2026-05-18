@@ -42,7 +42,7 @@
                         object-fit:fill;
                         @media (min-width:768px){
                             height: 350px;
-                            object-fit:fill;
+                            object-fit:scale-down;
                         }
                     }
                 }

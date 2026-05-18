@@ -15,6 +15,9 @@
         width: 100%;
         object-fit: cover;
         filter: brightness(0.5);
+        @media (min-width:768px){
+            object-fit:cover;
+        }
     }
     @media (min-width:768px){
         height:60vh;
@@ -36,6 +39,9 @@
             @include variaveis.fonteParagrafo;
             font-size: variaveis.$tamanhoTextoMd;
             margin-bottom: 20px;
+            @media (min-width:768px){
+                font-size: 1rem;
+            }
         }
         &__btn{
             @include variaveis.botoesTamanho;
