@@ -1,0 +1,24 @@
+$tamanhoTextoTituloLg:2.5rem;
+$tamanhoTextoSm:0.8rem;
+
+@mixin fontePrincipalTitulo{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin fonteParagrafo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@mixin botoesTamanho{
+    border-radius:15px;
+    padding: 15px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(0.9);
+        box-shadow: 0px 0px 10px black;
+    }
+}

@@ -1,0 +1,34 @@
+@use "./variaveis";
+
+.container-foto-hero{
+    height: 40vh;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+}
+.secao-nome-e-data{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    &__container{
+        width: 80%;
+        h1{
+            color: #fff;
+            @include variaveis.fontePrincipalTitulo;
+            font-size: variaveis.$tamanhoTextoTituloLg;
+            margin-bottom: 20px;
+        }
+        p{
+            @include variaveis.fonteParagrafo;
+            font-size: variaveis.$tamanhoTextoSm;
+            margin-bottom: 20px;
+        }
+        &__btn{
+            @include variaveis.botoesTamanho;
+            box-shadow: 0 5px 10px black;
+        }
+    }
+}
