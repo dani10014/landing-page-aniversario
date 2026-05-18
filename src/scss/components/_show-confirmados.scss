@@ -1,11 +1,39 @@
 @use "./variaveis";
 .shows-confirmados{
-    padding-top: 120px;
+    padding-top: 150px;
     .container{
         h2{
             color:#fff;
             @include variaveis.fontePrincipalTitulo;
             font-size: variaveis.$tamanhoTextoTituloLg;
         }
+        #indicadores-de-slide{
+            bottom: -75px !important;
+            li{
+                list-style: none;
+            }
+        }
+        .carousel-control-prev{
+            bottom: -330px;
+            top: 240px;
+            height: 100px;
+        }
+        .carousel-control-next{
+            bottom: -330px;
+            top: 240px;
+            height: 100px;
+        }
+            .carousel-inner{
+                margin-bottom: 50px; // Mantém a margem inferior desejada
+                // Removido 'margin: 10px;' para evitar o overflow horizontal.
+                // A margem lateral de 10px estava causando o conteúdo a exceder o container.
+                .carousel-item{
+                    img{
+                        border-radius: 10px;
+                        height: 250px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
     }
-}
